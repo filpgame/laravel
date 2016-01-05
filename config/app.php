@@ -201,12 +201,12 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'HTML' => Collective\Html\HtmlFacade::class,
-        'FORM' => Collective\Html\FormFacade::class,
+        'HTML'      => Collective\Html\HtmlFacade::class,
+        'FORM'      => Collective\Html\FormFacade::class,
         'Socialize' => Laravel\Socialite\Facades\Socialite::class,
-        'Image' => Intervention\Image\Facades\Image::class,
-        'Flash' => Laracasts\Flash\Flash::class,
-        'Form' => Bllim\Laravalid\Facade::class,
+        'Image'     => Intervention\Image\Facades\Image::class,
+        'Flash'     => Laracasts\Flash\Flash::class,
+        'Form'      => Bllim\Laravalid\Facade::class,
     ],
 
 ];

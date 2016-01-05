@@ -2,13 +2,13 @@
 
 namespace App\Providers;
 
+use Barryvdh\Debugbar\ServiceProvider as DebugbarServiceProvider;
 use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\SlackHandler;
 use Way\Generators\GeneratorsServiceProvider;
 use Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider;
-use Barryvdh\Debugbar\ServiceProvider as DebugbarServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
                 \Cache::flush();
             }
         }
-        /**
+        /*
          * Define o Handler para registrar log do sistema para o Slack.
          */
         if (env('SLACK_LOG', false)) {
